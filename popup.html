@@ -1,14 +1,211 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grade 4's Perfect AdBlocker</title>
   <style>
-    body { width: 220px; font-family: sans-serif; margin: 0; padding: 15px; text-align: center; background: #f8f9fa; }
-    .status-box { background: #28a745; color: white; padding: 10px; border-radius: 8px; font-weight: bold; }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      width: 350px;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      padding: 20px;
+      min-height: auto;
+    }
+    
+    .container {
+      background: white;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    }
+    
+    .header {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    
+    .header h1 {
+      font-size: 24px;
+      color: #333;
+      margin-bottom: 5px;
+    }
+    
+    .header p {
+      font-size: 12px;
+      color: #999;
+    }
+    
+    .status-box {
+      background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+      color: white;
+      padding: 15px;
+      border-radius: 8px;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      box-shadow: 0 4px 15px rgba(40, 167, 69, 0.3);
+    }
+    
+    .stats {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      margin-bottom: 15px;
+    }
+    
+    .stat-item {
+      background: #f8f9fa;
+      padding: 12px;
+      border-radius: 8px;
+      text-align: center;
+      border-left: 4px solid #667eea;
+    }
+    
+    .stat-number {
+      font-size: 20px;
+      font-weight: bold;
+      color: #667eea;
+    }
+    
+    .stat-label {
+      font-size: 11px;
+      color: #999;
+      margin-top: 5px;
+      text-transform: uppercase;
+    }
+    
+    .features {
+      background: #f8f9fa;
+      padding: 12px;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+    
+    .features h3 {
+      font-size: 13px;
+      color: #333;
+      margin-bottom: 10px;
+      font-weight: 600;
+    }
+    
+    .feature-list {
+      list-style: none;
+    }
+    
+    .feature-list li {
+      font-size: 12px;
+      color: #666;
+      padding: 5px 0;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    
+    .feature-list li::before {
+      content: "✓";
+      color: #28a745;
+      font-weight: bold;
+      font-size: 14px;
+    }
+    
+    .button-group {
+      display: flex;
+      gap: 8px;
+    }
+    
+    button {
+      flex: 1;
+      padding: 10px 12px;
+      border: none;
+      border-radius: 6px;
+      font-size: 12px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    
+    .btn-primary {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+    }
+    
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+    }
+    
+    .btn-secondary {
+      background: #e9ecef;
+      color: #333;
+    }
+    
+    .btn-secondary:hover {
+      background: #dee2e6;
+    }
+    
+    .footer {
+      text-align: center;
+      font-size: 10px;
+      color: #999;
+      margin-top: 15px;
+      padding-top: 10px;
+      border-top: 1px solid #eee;
+    }
   </style>
 </head>
 <body>
-  <h3>실시간 광고 차단 엔진</h3>
-  <div class="status-box">🛡️ 완벽 보호 중</div>
+  <div class="container">
+    <div class="header">
+      <h1>🛡️ Grade 4's AdBlocker</h1>
+      <p>완벽한 광고 차단 엔진</p>
+    </div>
+    
+    <div class="status-box">✨ 완벽 보호 중</div>
+    
+    <div class="stats">
+      <div class="stat-item">
+        <div class="stat-number">10</div>
+        <div class="stat-label">차단 규칙</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">100%</div>
+        <div class="stat-label">작동률</div>
+      </div>
+    </div>
+    
+    <div class="features">
+      <h3>🎯 차단 기능:</h3>
+      <ul class="feature-list">
+        <li>Google Ads & AdSense</li>
+        <li>Facebook 광고</li>
+        <li>배너 & 팝업 광고</li>
+        <li>추적 스크립트</li>
+        <li>Amazon 광고</li>
+      </ul>
+    </div>
+    
+    <div class="button-group">
+      <button class="btn-primary" id="reloadBtn">새로고침</button>
+      <button class="btn-secondary" id="infoBtn">정보</button>
+    </div>
+    
+    <div class="footer">
+      <p>v1.0.1 • Made with ❤️ by 4th grader</p>
+      <p>최적화된 성능과 완벽한 보호</p>
+    </div>
+  </div>
+  
+  <script src="popup.js"></script>
 </body>
 </html>

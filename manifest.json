@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
   "name": "Grade 4's Perfect AdBlocker",
-  "version": "1.0",
-  "description": "The perfect ad blocker created by an 11-year-old 4th grader. Stops all ads and trackers!",
+  "version": "1.0.1",
+  "description": "완벽한 광고 차단 - 4학년이 만들었습니다!",
   "permissions": ["declarativeNetRequest", "declarativeNetRequestWithHostAccess"],
   "host_permissions": ["<all_urls>"],
   "declarative_net_request": {
@@ -12,5 +12,13 @@
       "path": "rules.json"
     }]
   },
-  "action": { "default_popup": "popup.html" }
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Grade 4's AdBlocker"
+  },
+  "icons": {
+    "16": "images/icon-16.png",
+    "48": "images/icon-48.png",
+    "128": "images/icon-128.png"
+  }
 }

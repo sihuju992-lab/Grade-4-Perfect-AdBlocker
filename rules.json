@@ -14,7 +14,7 @@
     "action": { "type": "block" },
     "condition": {
       "urlFilter": "*googlesyndication*",
-      "resourceTypes": ["script", "image", "xmlhttprequest", "sub_frame"]
+      "resourceTypes": ["script", "image", "xmlhttprequest"]
     }
   },
   {
@@ -40,7 +40,7 @@
     "priority": 1,
     "action": { "type": "block" },
     "condition": {
-      "urlFilter": "*ads/*",
+      "urlFilter": "||ads.*.||*",
       "resourceTypes": ["image", "sub_frame", "script"]
     }
   },
