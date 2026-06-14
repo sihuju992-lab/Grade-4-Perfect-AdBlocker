@@ -1,8 +1,8 @@
-# 🚫 Grade 4 Perfect AdBlocker
+#  Grade 4 Perfect AdBlocker
 
 Chrome 확장프로그램 기반의 강력한 광고 차단 도구입니다.
 
-## ✨ 주요 기능
+##  주요 기능
 
 - ✅ **Google 광고 차단** - Google Ads, AdSense 완벽 차단
 - ✅ **Facebook 광고 차단** - 페이스북의 모든 광고 차단
@@ -11,7 +11,7 @@ Chrome 확장프로그램 기반의 강력한 광고 차단 도구입니다.
 - ✅ **추적 스크립트 차단** - 광고 추적 및 분석 스크립트 차단
 - ✅ **Manifest V3** - 최신 Chrome 확장프로그램 표준
 
-## 🚀 설치 방법
+## 설치 방법
 
 1. 이 저장소를 클론하거나 다운로드합니다
 ```bash
@@ -26,7 +26,7 @@ git clone https://github.com/sihuju992-lab/Grade-4-Perfect-AdBlocker.git
 
 5. 이 프로젝트 폴더를 선택합니다
 
-## 📋 파일 구조
+##  파일 구조
 
 ```
 Grade-4-Perfect-AdBlocker/
@@ -40,7 +40,7 @@ Grade-4-Perfect-AdBlocker/
 └── README.md           # 이 파일
 ```
 
-## 🎯 작동 원리
+##  작동 원리
 
 ### 1. Manifest V3 (최신 표준)
 - 최신 Chrome 확장프로그램 API 사용
@@ -60,7 +60,7 @@ Grade-4-Perfect-AdBlocker/
 - 빠른 설정 접근
 - 사용자 친화적 인터페이스
 
-## 🔧 광고 필터 규칙
+##  광고 필터 규칙
 
 다음 광고 네트워크를 지원합니다:
 
@@ -69,14 +69,7 @@ Grade-4-Perfect-AdBlocker/
 - 일반 배너 광고
 - 팝업 및 모달 광고
 - 광고 추적 스크립트
-
-## 📊 통계
-
-확장프로그램이 실시간으로 차단된 광고 개수를 집계합니다:
-- 팝업을 열면 언제든지 확인 가능
-- 카운트 초기화 버튼으로 리셋 가능
-
-## ⚙️ 커스터마이징
+##  커스터마이징
 
 ### 광고 필터 추가하기
 
@@ -99,7 +92,7 @@ const AD_SELECTORS = [
 ]
 ```
 
-## 🐛 문제 해결
+## 문제 해결
 
 ### 광고가 여전히 보입니다
 1. 페이지 새로고침 (Ctrl+Shift+R 또는 Cmd+Shift+R)
@@ -110,11 +103,11 @@ const AD_SELECTORS = [
 - `content.js`의 필터 규칙이 너무 공격적일 수 있습니다
 - `AD_SELECTORS`에서 필터를 제거해 봅니다
 
-## 📝 라이선스
+## 라이선스
 
 이 프로젝트는 자유롭게 사용, 수정, 배포할 수 있습니다.
 
-## 🤝 기여
+##  기여
 
 개선 사항이나 버그 리포트는 이슈(Issues)를 통해 제출해주세요!
 
@@ -122,4 +115,4 @@ const AD_SELECTORS = [
 
 **최종 수정:** 2026년 6월 14일  
 **버전:** 1.0.0  
-**상태:** 제작 중 ✨
+**상태:** 제작 중 
