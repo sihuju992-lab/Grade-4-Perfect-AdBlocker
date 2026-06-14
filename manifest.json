@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Grade 4's Perfect AdBlocker",
+  "version": "1.0",
+  "description": "The perfect ad blocker created by an 11-year-old 4th grader. Stops all ads and trackers!",
+  "permissions": ["declarativeNetRequest", "declarativeNetRequestWithHostAccess"],
+  "host_permissions": ["<all_urls>"],
+  "declarative_net_request": {
+    "rule_resources": [{
+      "id": "ruleset_1",
+      "enabled": true,
+      "path": "rules.json"
+    }]
+  },
+  "action": { "default_popup": "popup.html" }
+}
