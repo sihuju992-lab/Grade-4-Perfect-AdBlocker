@@ -1,7 +1,10 @@
 [
   {
     "id": 1,
-    "priority": 1,
+    "id": 4, ...
+    "urlFilter": "://youtube.com"
+    "id": 5, ...
+    "urlFilter": "://youtube.com"
     "action": { "type": "block" },
     "condition": {
       "urlFilter": "*doubleclick.net*",
