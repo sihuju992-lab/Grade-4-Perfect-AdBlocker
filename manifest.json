@@ -1,32 +1,22 @@
 {
   "manifest_version": 3,
-  "name": "Grade 4's Perfect AdBlocker",
-  "version": "1.0.0",
-  "description": "An 11-year-old 4th grader's perfect ad blocker with real-time statistics!",
+  "name": "Grade 4 Perfect AdBlocker",
+  "version": "1.0.1",
+  "description": "Chrome 확장프로그램 기반의 강력한 광고 차단 도구입니다.",
   "permissions": [
     "declarativeNetRequest",
-    "storage"
+    "declarativeNetRequestFeedback"
   ],
   "host_permissions": [
-    "<all_urls>"
+    "*://*/*"
   ],
   "declarative_net_request": {
-    "rule_resources": [{
-      "id": "ruleset_1",
-      "enabled": true,
-      "path": "rules.json"
-    }]
-  },
-  "background": {
-    "service_worker": "background.js"
-  },
-  "content_scripts": [
-    {
-      "matches": ["<all_urls>"],
-      "js": ["content.js"]
-    }
-  ],
-  "action": {
-    "default_popup": "popup.html"
+    "rule_resources": [
+      {
+        "id": "ruleset_1",
+        "enabled": true,
+        "path": "rules.json"
+      }
+    ]
   }
 }
