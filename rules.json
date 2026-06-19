@@ -2,7 +2,7 @@
   {
     "id": 1,
     "id": 4, ...
-    "urlFilter": "://youtube.com"
+"||ads.*"
     "id": 5, ...
     "urlFilter": "://youtube.com"
     "action": { "type": "block" },
